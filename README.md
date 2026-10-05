@@ -1,42 +1,15 @@
-# Trust Drive Tech — V1 Website
+# Trust Drive Tech Website V2 — Bilingual
 
-A lightweight static landing page for **TrustDriveTech.ai**.
+This version keeps the original V1 page structure and content, and adds a Chinese version with a language switch in the top-right navigation area.
 
 ## Files
+- `index.html` — bilingual content and language-switch logic
+- `styles.css` — original styling plus language-switch styles
 
-- `index.html` — main website
-- `styles.css` — visual styling and responsive layout
+## Deploy to GitHub Pages
+Replace the existing `index.html` and `styles.css` files in the GitHub Pages repository, then commit the changes. No Namecheap DNS or GitHub Pages domain settings need to be changed.
 
-No build system or JavaScript framework is required.
-
-## Run locally
-
-Open `index.html` directly in a browser, or run a simple local web server:
-
-```bash
-python -m http.server 8080
-```
-
-Then open `http://localhost:8080`.
-
-## Deploy
-
-This site can be deployed directly to any static hosting provider, for example:
-
-- Cloudflare Pages
-- GitHub Pages
-- Vercel
-- Netlify
-- Traditional web hosting / NAS web server
-
-Upload both files to the site's web root and set the custom domain to `trustdrivetech.ai`.
-
-## Before public launch
-
-Recommended edits:
-
-1. Confirm the final domain spelling and capitalization.
-2. Replace `contact@trustdrivetech.ai` if a different business email will be used.
-3. Add legal / privacy pages if a contact form, analytics, cookies, or user data collection is introduced.
-4. Add company registration details if required for the target jurisdiction.
-5. Add logo, project cases and bilingual content in V2.
+## Language behavior
+- Default language: English
+- Switch: `EN / 中文` in the upper-right corner
+- The selected language is remembered in the browser using local storage.
